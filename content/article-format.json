@@ -1,0 +1,16 @@
+{
+  "id": "unique-article-id",
+  "slug": "article-url-slug",
+  "category": "founder-files",
+  "section": "THE EDITORIAL",
+  "series": "Founder Files",
+  "title": "Article title goes here",
+  "excerpt": "Short summary used on cards and listings.",
+  "author": "Author name",
+  "publishedAt": "2026-08-22",
+  "readTime": "6 min read",
+  "featured": false,
+  "tags": ["tag-one", "tag-two", "tag-three"],
+  "coverImage": "/images/articles/example-cover.jpg",
+  "markdown": "# Markdown title\n\nWrite the full article here in markdown.\n\n## Section heading\n\n- bullet one\n- bullet two\n\nYou can include **bold**, *italic*, [links](https://example.com), and regular paragraphs."
+}

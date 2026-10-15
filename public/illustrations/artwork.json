@@ -1,0 +1,21 @@
+{
+  "generatedAsset": "/illustrations/founder-city.webp",
+  "mode": "built-in image_gen",
+  "prompt": "Use case: illustration-story. Asset type: final website illustration for Budera, a founder-led media and podcast site. Generate one elegant architectural pen-and-ink illustration, portrait format, approximately 1024x1536. Scene: dramatic street-level view looking upward between New York-style skyscrapers toward an open white sky, elegant early twentieth-century tower centered in the distance, tall gridded glass and masonry facades framing both sides, a few thinly outlined clouds. Style: meticulously hand-drawn architectural engraving in delicate muted navy-blue ink (#394e73), on pure white paper. Fine expressive contour lines, tiny precise window grids, selective crosshatching, restrained light blue-gray washes in shadows. Quiet sophistication, clean and crisp, generous unpainted white sky in upper middle, detailed but not heavy. Like a sophisticated architectural notebook illustration on a minimalist finance landing page. The building facades fill the lower portion and edges, dramatic perspective. Flat uniform pure white background, no yellow/cream paper texture, no grain overlay, no extra decorative frame, no gradients, no lettering, no logo, no watermarks. Do not create a website or UI screenshot: only the illustration. Save the final generated image and provide its local file path.",
+  "atomsArtwork": {
+    "path": "/illustrations/atoms-workshop.webp",
+    "mode": "built-in image_gen",
+    "reference": "Budera's existing two-robot podcast illustration",
+    "prompt": "Use case: illustration-story. Asset type: final landscape editorial illustration for ATOMS, Budera's flagship robotics and physical AI podcast. Input image: character-design and illustration-style reference only; create a NEW composition, do not reproduce the original scene. Keep the two recognizable robot mascots: a tall elegant humanoid with a smooth rounded helmet, dark featureless visor, exposed circular joints and slender mechanical hands; and a short friendly box-headed robot with two little dark rectangular eyes, side vents and a dark chest panel. Draw both recording a podcast in a robotics workshop, taking a hilariously failed prototype completely seriously. The tall humanoid sits calmly at a small table and interviews the little boxy robot; between them an overengineered tabletop robot arm has tangled itself in microphone cables and is holding the microphone upside down. A few fallen bolts and a detached small wheel lie underneath. The little robot gestures confidently as if everything is going exactly to plan. Humor should come from poses and physical comedy, no text or speech bubbles. Medium: crisp fine navy-blue (#394e73) pen-and-ink architectural-style engraving on pure white, continuous legible contours, expressive but precise technical details and selective delicate crosshatching, matching the supplied Budera robot reference. Generous clean white negative space around all objects. Landscape 1536x1024 or similar 3:2 ratio. Full robots and props within the frame, centered compact composition intended to display at 600 pixels wide on a minimalist white website. A small simple floor line only, avoid busy backgrounds, avoid huge black areas, avoid color beyond navy and light blue-gray, no paper grain, no lettering, no labels, no ATOMS or other logo, no watermarks, no website mockup. Do not include skyscrapers or architecture."
+  },
+  "closingLabArtwork": {
+    "path": "/illustrations/robotics-lab.webp",
+    "mode": "built-in image_gen",
+    "reference": "Budera's original two-robot podcast illustration"
+  },
+  "nativeAsset": {
+    "path": "/illustrations/podcast-ink.svg",
+    "source": "/podcast.svg",
+    "changes": "Original vector artwork preserved, recolored to #394e73 with a 1.4-unit matching stroke for legibility."
+  }
+}
