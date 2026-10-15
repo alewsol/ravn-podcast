@@ -33,8 +33,8 @@ export const atoms = {
       "From the biggest names in robotics to the people you'll be hearing about five years from now.",
       "Come for the cool robots. Stay for the people who somehow figured out how to build them.",
     ],
-    cta: "Explore the episodes",
-    href: "#",
+    cta: "Get new episodes",
+    href: "/#newsletter",
   },
   guests: {
     eyebrow: "YOUR TURN",

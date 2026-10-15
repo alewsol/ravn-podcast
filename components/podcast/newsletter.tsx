@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, type FormEvent } from "react"
+import { useRef, useState, type FormEvent } from "react"
 import Image from "next/image"
 import { ArrowUpRightIcon } from "@phosphor-icons/react/dist/ssr/ArrowUpRight"
 
@@ -10,9 +10,13 @@ export function NewsletterSection() {
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<Status>("idle")
   const [message, setMessage] = useState<string | null>(null)
+  const submitting = useRef(false)
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    if (submitting.current) return
+
+    submitting.current = true
     setStatus("submitting")
     setMessage(null)
 
@@ -20,23 +24,26 @@ export function NewsletterSection() {
       const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email: email.trim() }),
+        signal: AbortSignal.timeout(25_000),
       })
 
       const data = await response.json().catch(() => null)
 
-      if (!response.ok) {
+      if (!response.ok || data?.ok !== true) {
         setStatus("error")
         setMessage(data?.error ?? "Something went wrong. Try again.")
         return
       }
 
       setStatus("success")
-      setMessage("You're in. Check your inbox.")
+      setMessage(data.message ?? "You're in. Check your inbox for a welcome email.")
       setEmail("")
     } catch {
       setStatus("error")
-      setMessage("Something went wrong. Try again.")
+      setMessage("We couldn't confirm your subscription. Please try again.")
+    } finally {
+      submitting.current = false
     }
   }
 
@@ -52,9 +59,17 @@ export function NewsletterSection() {
               name="email"
               type="email"
               autoComplete="email"
+              maxLength={254}
+              disabled={status === "submitting"}
               required
               value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              onChange={(event) => {
+                setEmail(event.target.value)
+                if (status !== "idle") {
+                  setStatus("idle")
+                  setMessage(null)
+                }
+              }}
               placeholder="Email address"
               aria-invalid={status === "error"}
               aria-describedby={message ? "newsletter-message" : undefined}

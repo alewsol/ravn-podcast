@@ -1,5 +1,38 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Newsletter and Resend
+
+The subscribe form posts to `/api/subscribe`. A successful request saves the email
+as a Resend Contact, sends a welcome email to the reader, and sends a notification
+to the team. Existing contacts are reused; submitting again can opt an unsubscribed
+contact back in. Email retries reuse a Resend idempotency key for 24 hours.
+Success means Resend accepted both emails; delivery and bounces can be checked in
+the Resend dashboard.
+
+Copy `.env.example` to `.env.local` for local development. On Vercel, keep the
+existing production values under **Project Settings → Environment Variables**:
+
+| Variable | Purpose |
+| --- | --- |
+| `RESEND_API_KEY` | Required server-only key with **Full access** to manage Contacts and send emails. A sending-only key cannot save subscribers. |
+| `RESEND_FROM_EMAIL` | Required sender on your existing verified Resend domain, such as `Budera <hello@your-verified-domain.com>`. The `onboarding@resend.dev` test sender cannot send welcome emails to general subscribers. |
+| `RESEND_NOTIFY_EMAIL` | Team inbox for new subscriber notifications. Defaults to `budera.founders@gmail.com`. |
+| `RESEND_SEGMENT_ID` | Optional existing Resend newsletter segment. Set this to group signups for Broadcasts; without it they are saved in the global Contact list. |
+| `NEXT_PUBLIC_SITE_URL` | Public site URL for metadata and the sitemap. |
+
+Set variables for the Vercel environments you deploy to, then redeploy. Never
+prefix the Resend key with `NEXT_PUBLIC_` or commit `.env.local`.
+Publishing an article does not automatically send a campaign; send newsletter
+Broadcasts from Resend to your configured segment.
+
+`npm test` exercises the real subscription handler and Resend SDK against mocked
+HTTP responses, including rejected sends, invalid input, retries, and returning
+subscribers. It does not send live emails.
+
+The ATOMS **Get new episodes** button opens the newsletter form until a real
+episode destination is available. Guest and suggestion buttons open an email to
+the team with the subject filled in.
+
 ## Getting Started
 
 First, run the development server:
