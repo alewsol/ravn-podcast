@@ -32,7 +32,8 @@ export function NewsletterSection() {
 
       if (!response.ok || data?.ok !== true) {
         setStatus("error")
-        setMessage(data?.error ?? "Something went wrong. Try again.")
+        const error = typeof data?.error === "string" ? data.error : "Something went wrong. Try again."
+        setMessage(typeof data?.reference === "string" ? `${error} Reference: ${data.reference}` : error)
         return
       }
 

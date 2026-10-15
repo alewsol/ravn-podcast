@@ -3,11 +3,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Newsletter and Resend
 
 The subscribe form posts to `/api/subscribe`. A successful request saves the email
-as a Resend Contact, sends a welcome email to the reader, and sends a notification
-to the team. Existing contacts are reused; submitting again can opt an unsubscribed
-contact back in. Email retries reuse a Resend idempotency key for 24 hours.
-Success means Resend accepted both emails; delivery and bounces can be checked in
-the Resend dashboard.
+as a Resend Contact and adds it to the configured newsletter segment. The handler
+then attempts a welcome email and a separate team notification. Email failures do
+not undo a saved subscription; the form tells readers when a welcome email could
+not be sent. Existing contacts are reused; submitting again can opt an unsubscribed
+contact back in. Each email uses its own Resend idempotency key for 24 hours.
+Delivery and bounces can be checked in the Resend dashboard.
 
 Copy `.env.example` to `.env.local` for local development. On Vercel, keep the
 existing production values under **Project Settings → Environment Variables**:
@@ -22,6 +23,17 @@ existing production values under **Project Settings → Environment Variables**:
 
 Set variables for the Vercel environments you deploy to, then redeploy. Never
 prefix the Resend key with `NEXT_PUBLIC_` or commit `.env.local`.
+
+Run `npm run subscriptions:check` with those environment values loaded to check
+Contacts access, the configured segment, and sender-domain verification. It uses
+the same `.env*` loading rules as Next.js, prints no credentials or contact details,
+does not change contacts, and sends no emails. It exits with a nonzero status when
+configuration fails. Sending quotas and inbox delivery still need a live check.
+For production failures, match the reference shown by the form to Vercel function
+logs for `/api/subscribe`; the log identifies the failing operation and Resend
+error code. Transient API failures retry up to twice within an 18-second overall
+provider time budget; permission, validation, and quota failures are not retried.
+
 Publishing an article does not automatically send a campaign; send newsletter
 Broadcasts from Resend to your configured segment.
 

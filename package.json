@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --import tsx --test tests/*.test.ts"
+    "test": "node --import tsx --test tests/*.test.ts",
+    "subscriptions:check": "node --import tsx scripts/check-subscriptions.ts"
   },
   "dependencies": {
     "@openai/codex": "^0.162.1",
