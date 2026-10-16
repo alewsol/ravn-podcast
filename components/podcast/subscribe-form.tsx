@@ -1,0 +1,84 @@
+"use client"
+
+import { useId, useRef, useState, type FormEvent } from "react"
+import { useRouter } from "next/navigation"
+import { ArrowUpRightIcon } from "@phosphor-icons/react/dist/ssr/ArrowUpRight"
+
+type Status = "idle" | "submitting" | "success" | "error"
+
+export function SubscribeForm({ unlock = false }: { unlock?: boolean }) {
+  const id = useId()
+  const router = useRouter()
+  const [email, setEmail] = useState("")
+  const [status, setStatus] = useState<Status>("idle")
+  const [message, setMessage] = useState<string | null>(null)
+  const submitting = useRef(false)
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    if (submitting.current) return
+    submitting.current = true
+    setStatus("submitting")
+    setMessage(null)
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim() }),
+        signal: AbortSignal.timeout(25_000),
+      })
+      const data = await response.json().catch(() => null)
+      if (!response.ok || data?.ok !== true) {
+        setStatus("error")
+        const error = typeof data?.error === "string" ? data.error : "Something went wrong. Try again."
+        setMessage(typeof data?.reference === "string" ? `${error} Reference: ${data.reference}` : error)
+        return
+      }
+      setStatus("success")
+      setMessage(data.message ?? "You're subscribed. All stories are unlocked in this browser.")
+      setEmail("")
+      router.refresh()
+    } catch {
+      setStatus("error")
+      setMessage("We couldn't confirm your subscription. Please try again.")
+    } finally {
+      submitting.current = false
+    }
+  }
+
+  return (
+    <div className="w-full max-w-96">
+      <form onSubmit={handleSubmit} className="newsletter-form" aria-busy={status === "submitting"}>
+        <label htmlFor={`${id}-email`}>Email address</label>
+        <input
+          id={`${id}-email`}
+          name="email"
+          type="email"
+          autoComplete="email"
+          maxLength={254}
+          disabled={status === "submitting"}
+          required
+          value={email}
+          onChange={(event) => {
+            setEmail(event.target.value)
+            if (status !== "idle") {
+              setStatus("idle")
+              setMessage(null)
+            }
+          }}
+          placeholder="Email address"
+          aria-invalid={status === "error"}
+          aria-describedby={message ? `${id}-message` : undefined}
+        />
+        <button type="submit" disabled={status === "submitting"} className="ink-button ink-button-solid">
+          {status === "submitting" ? "Subscribing…" : unlock ? "Subscribe free & unlock" : "Subscribe"}
+          <ArrowUpRightIcon size={18} aria-hidden="true" />
+        </button>
+      </form>
+      <p id={`${id}-message`} role="status" aria-live="polite" className={`newsletter-message ${status === "error" ? "text-destructive" : ""}`}>
+        {message}
+      </p>
+    </div>
+  )
+}

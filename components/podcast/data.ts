@@ -1,8 +1,8 @@
 export const navItems = [
   { href: "/atoms", id: "podcast", label: "ATOMS" },
-  { href: "/#editorial", id: "editorial", label: "Founder Files" },
-  { href: "/#companies", id: "companies", label: "Worth Watching" },
-  { href: "/#opinions", id: "opinions", label: "Hot Takes" },
+  { href: "/founder-files", id: "editorial", label: "Founder Files" },
+  { href: "/worth-watching", id: "companies", label: "Worth Watching" },
+  { href: "/hot-takes", id: "opinions", label: "Hot Takes" },
 ] as const
 
 export const sectionIds = ["podcast", "editorial", "companies", "opinions"] as const

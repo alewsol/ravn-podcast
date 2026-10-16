@@ -3,6 +3,7 @@ import { afterEach, beforeEach, test } from "node:test"
 
 import { POST } from "../app/api/subscribe/route"
 import { getResendClient } from "../lib/resend"
+import { SUBSCRIBER_COOKIE, verifySubscriberSession } from "../lib/subscriber-session"
 
 type ApiCall = { url: URL; method: string; body: unknown; headers: Headers }
 type ApiReply = { status?: number; body: unknown; headers?: Record<string, string> }
@@ -68,6 +69,7 @@ test("rejects malformed JSON and invalid email values without calling Resend", a
   for (const body of [null, {}, { email: 42 }, { email: "" }, { email: "not-an-email" }, { email: `${"a".repeat(250)}@example.com` }]) {
     const response = await subscribe(body)
     assert.equal(response.status, 400)
+    assert.equal(response.headers.get("set-cookie"), null)
     assert.equal((await response.json()).ok, undefined)
   }
   assert.equal(calls.length, 0)
@@ -79,6 +81,10 @@ test("normalizes the address, saves the subscriber to a segment, then sends both
 
   const response = await subscribe({ email: "  Reader+News@Example.com  " })
   assert.equal(response.status, 200)
+  assert.equal(verifySubscriberSession(response.cookies.get(SUBSCRIBER_COOKIE)?.value), true)
+  assert.match(response.headers.get("set-cookie") ?? "", /HttpOnly/)
+  assert.match(response.headers.get("set-cookie") ?? "", /SameSite=lax/i)
+  assert.equal(response.headers.get("cache-control"), "private, no-store")
   assert.equal((await response.json()).ok, true)
   assert.equal(calls.length, 4)
   assert.equal(calls[0].url.pathname, "/contacts/reader%2Bnews%40example.com")
@@ -111,6 +117,7 @@ test("email rejection preserves a saved subscription and does not promise a welc
   const result = await response.json()
   assert.equal(result.ok, true)
   assert.equal(result.welcomeSent, false)
+  assert.equal(verifySubscriberSession(response.cookies.get(SUBSCRIBER_COOKIE)?.value), true)
   assert.match(result.message, /couldn't send your welcome email/)
   assert.doesNotMatch(JSON.stringify(result), /domain|test-key|reader@/)
 })
@@ -122,6 +129,7 @@ test("a contact storage or permission failure prevents sending welcome emails", 
   })
   const response = await subscribe({ email: "reader@example.com" })
   assert.equal(response.status, 503)
+  assert.equal(response.headers.get("set-cookie"), null)
   assert.equal(calls.length, 2)
   assert.ok(calls.every((call) => call.url.pathname !== "/emails"))
 })

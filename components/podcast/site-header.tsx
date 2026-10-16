@@ -3,18 +3,25 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ListIcon } from "@phosphor-icons/react/dist/ssr/List"
 import { XIcon } from "@phosphor-icons/react/dist/ssr/X"
 
 import { useActiveSection } from "@/hooks/use-active-section"
 import { cn } from "@/lib/utils"
+import type { ArticleCategory } from "@/lib/articles"
 
 import { navItems, sectionIds } from "./data"
 
-export function PodcastSiteHeader() {
+export function PodcastSiteHeader({ category }: { category?: ArticleCategory }) {
   const [open, setOpen] = useState(false)
   const headerRef = useRef<HTMLElement>(null)
-  const active = useActiveSection(sectionIds)
+  const pathname = usePathname()
+  const activeSection = useActiveSection(sectionIds)
+  const active = pathname === "/"
+    ? activeSection
+    : navItems.find((item) => item.href === pathname || item.href === `/${category}`)?.id
+  const current = pathname === "/" ? "location" : "page"
 
   useEffect(() => {
     if (!open) return
@@ -49,7 +56,7 @@ export function PodcastSiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              aria-current={active === item.id ? "location" : undefined}
+              aria-current={active === item.id ? current : undefined}
               className={cn("editorial-nav-link", active === item.id && "is-active")}
             >
               {item.label}
@@ -78,7 +85,7 @@ export function PodcastSiteHeader() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                aria-current={active === item.id ? "location" : undefined}
+                aria-current={active === item.id ? current : undefined}
                 className={cn("editorial-nav-link", active === item.id && "is-active")}
               >
                 {item.label}

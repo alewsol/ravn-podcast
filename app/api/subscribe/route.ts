@@ -3,6 +3,7 @@ import { NextResponse } from "next/server"
 import type { ErrorResponse } from "resend"
 
 import { getFromEmail, getNotifyEmail, getResendClient } from "@/lib/resend"
+import { createSubscriberSession, SUBSCRIBER_COOKIE, SUBSCRIBER_MAX_AGE } from "@/lib/subscriber-session"
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -103,13 +104,21 @@ export async function POST(request: Request) {
       console.error("Subscriber saved; team notification unavailable", { reference })
     }
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       ok: true,
       welcomeSent,
       message: welcomeSent
         ? "You're in. Check your inbox for a welcome email."
         : "You're subscribed. We couldn't send your welcome email, but you're on the list for future updates.",
+    }, { headers: { "Cache-Control": "private, no-store" } })
+    response.cookies.set(SUBSCRIBER_COOKIE, createSubscriberSession(), {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      path: "/",
+      maxAge: SUBSCRIBER_MAX_AGE,
     })
+    return response
   } catch {
     console.error("Failed to save subscription; check RESEND_API_KEY permissions and newsletter segment configuration", { reference })
     return NextResponse.json(

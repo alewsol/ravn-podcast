@@ -2,7 +2,8 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { ArticlePage } from "@/components/podcast/article-page"
-import { getAllArticles, getArticleBySlug } from "@/lib/articles"
+import { getAllArticles, getArticleBySlug, isSubscriberArticle } from "@/lib/articles"
+import { hasSubscriberAccess } from "@/lib/subscriber-access"
 
 type ArticlePageProps = {
   params: Promise<{
@@ -27,6 +28,16 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   return {
     title: `${article.title} | Budera`,
     description: article.excerpt,
+    alternates: { canonical: `/articles/${article.slug}` },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.excerpt,
+      url: `/articles/${article.slug}`,
+      publishedTime: article.publishedAt,
+      authors: [article.author],
+      section: article.series,
+    },
   }
 }
 
@@ -38,5 +49,6 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
     notFound()
   }
 
-  return <ArticlePage article={article} />
+  const locked = isSubscriberArticle(article) && !(await hasSubscriberAccess())
+  return <ArticlePage article={article} locked={locked} />
 }

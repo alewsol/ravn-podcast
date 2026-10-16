@@ -37,6 +37,16 @@ provider time budget; permission, validation, and quota failures are not retried
 Publishing an article does not automatically send a campaign; send newsletter
 Broadcasts from Resend to your configured segment.
 
+The first four stories in each section (newest first) are public. Stories 5–10
+require a free newsletter subscription, including visits through direct article
+links. Listing payloads contain card metadata only. A successful subscription
+sets a signed, HttpOnly browser cookie for one year; failed signups never unlock
+stories. Existing subscribers can enter their email again to unlock another
+browser. Access is remembered on that browser without an account or email
+verification step. The optional `SUBSCRIBER_SESSION_SECRET` signs access cookies;
+otherwise a separate signing key is derived from `RESEND_API_KEY`. Rotating the
+signing credential invalidates existing access cookies.
+
 `npm test` exercises the real subscription handler and Resend SDK against mocked
 HTTP responses, including rejected sends, invalid input, retries, and returning
 subscribers. It does not send live emails.

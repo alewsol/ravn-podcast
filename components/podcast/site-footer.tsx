@@ -9,9 +9,9 @@ const columns = [
   {
     title: "Editorial",
     links: [
-      { href: "/#editorial", label: "Founder Files" },
-      { href: "/#companies", label: "Worth Watching" },
-      { href: "/#opinions", label: "Hot Takes" },
+      { href: "/founder-files", label: "Founder Files" },
+      { href: "/worth-watching", label: "Worth Watching" },
+      { href: "/hot-takes", label: "Hot Takes" },
     ],
   },
   {

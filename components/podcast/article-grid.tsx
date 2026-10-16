@@ -1,20 +1,27 @@
 "use client"
 
 import Link from "next/link"
+import { Fragment } from "react"
 import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr/ArrowRight"
 import { BookmarkSimpleIcon } from "@phosphor-icons/react/dist/ssr/BookmarkSimple"
+import { LockSimpleIcon } from "@phosphor-icons/react/dist/ssr/LockSimple"
 import { ImageDithering } from "@paper-design/shaders-react"
 
-import type { Article } from "@/lib/articles"
+import type { ArticleCard } from "@/lib/articles"
 import { cn } from "@/lib/utils"
+import { SubscriberGate } from "./subscriber-gate"
 
 type ArticleGridProps = {
   id: string
   eyebrow: string
   title: string
   description: string | readonly string[]
-  articles: Article[]
+  articles: ArticleCard[]
   columns?: "two" | "three"
+  headingLevel?: "h1" | "h2"
+  archiveHref?: string
+  totalCount?: number
+  hasAccess?: boolean
 }
 
 const cardImages = [
@@ -35,6 +42,10 @@ export function ArticleGrid({
   description,
   articles,
   columns = "three",
+  headingLevel: Heading = "h2",
+  archiveHref,
+  totalCount,
+  hasAccess = false,
 }: ArticleGridProps) {
   return (
     <section
@@ -46,7 +57,10 @@ export function ArticleGrid({
         <div className="editorial-section-heading">
           <div>
             <p className="editorial-eyebrow">{eyebrow}</p>
-            <h2 id={`${id}-title`} className="editorial-heading">{title}</h2>
+            <Heading id={`${id}-title`} className="editorial-heading mt-3">{title}</Heading>
+            {totalCount !== undefined ? (
+              <p className="type-meta mt-4 text-muted-foreground">{totalCount} stories</p>
+            ) : null}
           </div>
           <div className="editorial-section-description">
             {(Array.isArray(description) ? description : [description]).map((paragraph) => (
@@ -67,6 +81,12 @@ export function ArticleGrid({
             const image = cardImages[index % cardImages.length]
 
             return (
+              <Fragment key={article.id}>
+              {index === 4 && article.subscriberOnly && !hasAccess ? (
+                <div className={columns === "three" ? "sm:col-span-2 lg:col-span-3" : "sm:col-span-2"}>
+                  <SubscriberGate listing />
+                </div>
+              ) : null}
               <Link
                 key={article.id}
                 href={`/articles/${article.slug}`}
@@ -93,7 +113,9 @@ export function ArticleGrid({
                 <div className="flex items-start justify-between gap-4">
                   <span className="type-meta text-white/70">{article.readTime}</span>
                   <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white/15 text-white/80 transition-colors duration-300 group-hover:bg-white/25">
-                    <BookmarkSimpleIcon className="size-4" weight="bold" aria-hidden="true" />
+                    {article.subscriberOnly && !hasAccess
+                      ? <LockSimpleIcon className="size-4" weight="bold" aria-hidden="true" />
+                      : <BookmarkSimpleIcon className="size-4" weight="bold" aria-hidden="true" />}
                   </span>
                 </div>
 
@@ -123,13 +145,23 @@ export function ArticleGrid({
                     </span>
                   </div>
                   <span className="type-meta shrink-0 rounded-full bg-white/15 px-4 py-1.5 font-medium text-white transition-colors duration-300 group-hover:bg-white/25">
-                    Read
+                    {article.subscriberOnly && !hasAccess ? "Subscribe to read" : "Read"}
                   </span>
                 </div>
               </Link>
+              </Fragment>
             )
           })}
         </div>
+
+        {archiveHref ? (
+          <div className="mt-7 flex justify-end">
+            <Link href={archiveHref} className="ink-button">
+              All {totalCount} stories in {title}
+              <ArrowRightIcon className="size-4" aria-hidden="true" />
+            </Link>
+          </div>
+        ) : null}
       </div>
     </section>
   )

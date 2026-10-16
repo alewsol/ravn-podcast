@@ -214,5 +214,517 @@
     ],
     "coverImage": null,
     "markdown": "# They Raised $500K to Fix Lunch.\n\nLunch should not be this fucking complicated.\n\nYou wake up, open three delivery apps, stare at 400 options you don't want, pay too much, wait too long, and somehow end up eating the same sad chicken wrap you had yesterday. Ahmad A. and Ghada Zanaty thought there had to be a better way. So in 2025 they started Funch in Dubai around one simple idea. Pick your preferences once and let lunch just show up.\n\nThe model is deliberately boring, which is part of why it’s interesting. Funch charges AED 19 a day, has no delivery fee, and lets you skip or pause whenever you want. Behind the scenes, the company uses demand forecasting, route optimization and menu planning to make the economics work. During its early rollout, it says it delivered more than 75,000 meals with 99.8 percent delivery accuracy. It then raised $500K in pre-seed funding to scale the operation.\n\nThe bigger idea is that lunch probably shouldn't be a marketplace at all. It should be infrastructure. Funch isn't asking you to browse better. It’s trying to remove the decision entirely. That sounds almost too simple, which is usually when we start paying attention. Plenty of startups are trying to reinvent complicated industries with complicated software. Funch looked at lunch and decided the answer might just be to make the whole fucking thing disappear.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier."
+  },
+  {
+    "id": "founder-files-kenneth-cassel-rmfg",
+    "slug": "founder-files-kenneth-cassel-rmfg",
+    "category": "founder-files",
+    "section": "THE EDITORIAL",
+    "series": "Founder Files",
+    "title": "He Worked in the Trades. Then Software. Now He Runs a Factory.",
+    "excerpt": "Kenneth Cassel’s route to RMFG runs through the trades, software engineering and raising four kids. His next bet is a factory in Fort Worth.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "manufacturing",
+      "software",
+      "rmfg"
+    ],
+    "coverImage": null,
+    "markdown": "# He Worked in the Trades. Then Software. Now He Runs a Factory.\n\nThere is a particular kind of founder bio that makes you want to close the tab.\n\nKenneth Cassel’s is refreshingly fucking different.\n\nIn his public YC profile, he describes having his first kid at twenty, spending most of a decade in the trades, then stumbling into software. Four kids later, he’s building RMFG, a manufacturing company with its own factory in Fort Worth, Texas.\n\nSheet metal. Tubes. Machined parts. Assemblies that somebody actually needs delivered.\n\nThe interesting part is the combination. A software engineer can look at a factory and see processes to automate. Someone who has worked in the trades might also understand why those processes exist, which workarounds are essential, and which clever ideas will get laughed off the floor.\n\nYou probably want both perspectives before you start promising to reinvent manufacturing.\n\nRMFG says it develops software to handle quoting, production scheduling and machine control inside the operation it runs. The team gets to find out whether the software works by using it to make customer orders.\n\nThat is a fairly unforgiving feedback loop. A part either fits or it doesn’t. A shipment either leaves or it doesn’t. Nobody gets extra credit because the dashboard looks expensive.\n\nWe like the shape of this bet. Own enough of the operation to learn where the actual bottlenecks are. Improve them. Make the next order easier to deliver.\n\nCan that become a repeatable advantage as the factory takes on more complicated work? That’s the thing to watch.\n\nFor now, Cassel has picked a place where his unusual background might be useful every damn day.\n\nBudera Founder Files. The people building before the rest of us know what to call it.",
+    "sources": [
+      {
+        "title": "Kenneth Cassel’s founder profile and RMFG overview",
+        "url": "https://www.ycombinator.com/companies/rmfg"
+      },
+      {
+        "title": "Inside RMFG’s Fort Worth factory",
+        "url": "https://www.rmfg.com/about"
+      }
+    ]
+  },
+  {
+    "id": "founder-files-erica-diaz-hundred",
+    "slug": "founder-files-erica-diaz-hundred",
+    "category": "founder-files",
+    "section": "THE EDITORIAL",
+    "series": "Founder Files",
+    "title": "She Designed the Hardware. Then Went After the Tiny Defects That Ruin It.",
+    "excerpt": "Erica Diaz spent years building consumer hardware. At Hundred, she’s tackling the inspection work that can quietly wreck the finished product.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "computer-vision",
+      "manufacturing",
+      "hundred"
+    ],
+    "coverImage": null,
+    "markdown": "# She Designed the Hardware. Then Went After the Tiny Defects That Ruin It.\n\nA tiny scratch is a stupid reason to throw away an expensive device.\n\nIt is also exactly the kind of problem that disappears when people talk about the future of manufacturing in vague, impressive sentences.\n\nErica Diaz has spent time closer to the problem. Her public founder profile describes years designing hardware at Meta, Google and Magic Leap, including work with manufacturing vendors in China and Mexico.\n\nNow she’s building Hundred with Imani Gosserand and Iris Liao.\n\nThe company is developing an inspection system for consumer electronics components. Its approach uses controlled lighting and imaging to examine parts before defects get carried into a finished product.\n\nThere is something satisfying about a founder picking the thing that seems too small to headline a keynote.\n\nBecause small is relative. A cosmetic defect might be tiny. Discovering it after you have paid to assemble the rest of the device is a much bigger fucking problem.\n\nOur read is that Diaz’s background gives this particular bet some weight. Designing hardware means making decisions that eventually have to survive suppliers, materials, tolerances and production. An image that looks good on a screen gets a very different kind of review on a factory floor.\n\nHundred is early. Its claims about inspection performance still need to hold up across different parts and customer conditions. We’re interested in whether the team can make adoption straightforward when a product design changes.\n\nThat is where a useful inspection tool could become part of how a factory works.\n\nDiaz has chosen a narrow, measurable problem. You can point to the defect. You can count what slips through.\n\nThat gives the ambition somewhere concrete to start.\n\nBudera Founder Files. The people building before the rest of us know what to call it.",
+    "sources": [
+      {
+        "title": "Hundred’s company and founder profiles",
+        "url": "https://www.ycombinator.com/companies/hundred"
+      }
+    ]
+  },
+  {
+    "id": "founder-files-navvye-anand-tyler-rose-bindwell",
+    "slug": "founder-files-navvye-anand-tyler-rose-bindwell",
+    "category": "founder-files",
+    "section": "THE EDITORIAL",
+    "series": "Founder Files",
+    "title": "They Met at a Research Program. Now They’re Going After Pesticides.",
+    "excerpt": "Navvye Anand and Tyler Rose met at Wolfram’s summer research program. Their company, Bindwell, is taking AI into the chemistry of protecting crops.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "biology",
+      "agriculture",
+      "bindwell"
+    ],
+    "coverImage": null,
+    "markdown": "# They Met at a Research Program. Now They’re Going After Pesticides.\n\nPesticides are a pretty good way to make an AI conversation go quiet.\n\nWhich is partly why we’re interested.\n\nNavvye Anand and Tyler Rose met at the Wolfram Summer Research Program in 2023. In their public launch, they describe growing up visiting farmland, leaving college, and starting Bindwell to develop new pesticides with their own AI models.\n\nThat is a fairly specific thing to decide to spend your life on.\n\nBindwell’s stated approach is to study proteins in harmful species and look for molecules that could target them selectively. Its research tools include Foldwell, a structure prediction model.\n\nWe’re interested in the choice of problem. A model that suggests a molecule is the beginning of a long, uncomfortable process. Someone still has to test it, understand what else it affects, and find out whether it does anything useful outside a computational prediction.\n\nBiology doesn’t give a shit how convincing the launch video was.\n\nThat makes this a harder company to assess from the outside. We can see the founders’ stated direction. We cannot infer a successful pesticide from a protein model, and neither should anyone else.\n\nBut there’s an ambition here worth following. These two are applying their technical interests to a product whose eventual usefulness has to be measured in fields, against actual pests, under actual constraints.\n\nThe next thing we want to see is experimental evidence that moves the chemistry forward. Something a researcher can interrogate. Something a potential partner can test.\n\nEarly founders get plenty of encouragement to build whatever can be sold next month.\n\nAnand and Rose picked pesticides.\n\nWe’d like to see where that stubbornness goes.\n\nBudera Founder Files. The people building before the rest of us know what to call it.",
+    "sources": [
+      {
+        "title": "Bindwell’s founder profiles and public research launch",
+        "url": "https://www.ycombinator.com/companies/bindwell"
+      }
+    ]
+  },
+  {
+    "id": "founder-files-eric-berndt-tensr",
+    "slug": "founder-files-eric-berndt-tensr",
+    "category": "founder-files",
+    "section": "THE EDITORIAL",
+    "series": "Founder Files",
+    "title": "He Raced Autonomous Cars at 160 MPH. Now He Wants to Build the Factory.",
+    "excerpt": "Eric Berndt’s next robotics problem is making robots in the first place. Tensr is starting with a real factory and customer orders.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "robotics",
+      "manufacturing",
+      "tensr"
+    ],
+    "coverImage": null,
+    "markdown": "# He Raced Autonomous Cars at 160 MPH. Now He Wants to Build the Factory.\n\nAt 160 miles an hour, a software bug becomes a fairly physical problem.\n\nEric Berndt’s public profile describes racing autonomous IndyCars as a robotics researcher at Berkeley. Now he’s building Tensr with Adith Sundram and C.K. Wolfe.\n\nThe next problem they’ve chosen is the factory itself.\n\nTensr says it operates a 12,000-square-foot facility in the Bay Area manufacturing robots for customers. Its longer-term goal is to automate more of the path from a new order to production.\n\nThat is a useful place to put an ambitious robotics team. Every robot company eventually has to confront the awkward difference between building one machine and delivering a batch that works.\n\nParts have to arrive. Assemblies need to be consistent. A design revision has to make it onto the floor without turning everyone’s week into a complete fucking mess.\n\nWe like that Berndt and his co-founders have put those problems at the centre of the company. A factory serving other hardware teams has a reason to learn from more than one product and more than one customer’s mistakes.\n\nWhether those lessons can become reusable automation is the big question. Manufacturing different things can also mean absorbing a fresh set of complications with every order.\n\nSo we’re watching for repeatability. Does the next build get easier? Do changeovers improve? Can the team take on new work without starting the whole process again?\n\nThose are less exciting questions than how fast an autonomous race car can go.\n\nThey might be the questions that decide how many useful robots get built.\n\nBerndt has gone from pushing a machine around a track to trying to change the place machines come from.\n\nThat’s a hell of a second act to attempt.\n\nBudera Founder Files. The people building before the rest of us know what to call it.",
+    "sources": [
+      {
+        "title": "Tensr’s founders, factory and manufacturing thesis",
+        "url": "https://www.ycombinator.com/companies/tensr"
+      }
+    ]
+  },
+  {
+    "id": "founder-files-yuliya-raquel-patternfast",
+    "slug": "founder-files-yuliya-raquel-patternfast",
+    "category": "founder-files",
+    "section": "THE EDITORIAL",
+    "series": "Founder Files",
+    "title": "A Pretty AI Dress Is Easy. She Wants One a Factory Can Actually Make.",
+    "excerpt": "Yuliya Raquel is building PatternFast around the awkward journey from a clothing idea to patterns, sizing and production instructions.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "fashion",
+      "manufacturing",
+      "patternfast"
+    ],
+    "coverImage": null,
+    "markdown": "# A Pretty AI Dress Is Easy. She Wants One a Factory Can Actually Make.\n\nThe internet can generate a beautiful jacket in seconds.\n\nTry asking the image where the fucking seams go.\n\nThat’s the territory Yuliya Raquel is working in. After founding Tailornova/Couturme, she’s building PatternFast, a company focused on turning clothing ideas into the information needed to manufacture them.\n\nIn its public launch, PatternFast describes tools for garment patterns, sizing, fabric adjustments and production documentation.\n\nIt’s easy to miss how much of the product lives in those details. A design needs to fit a body. Different fabrics stretch differently. One sample needs to become a range of sizes that still looks like the same garment.\n\nThese are the kinds of problems you can edit out of a demo and immediately encounter when you try to make something.\n\nWhat interests us about Raquel is the persistence of the subject. The public history runs through more than one company name, but the work keeps returning to the connection between design and manufacturing.\n\nThat suggests a deeper question than whether AI can draw clothes. Can software carry more of a designer’s intention into something that can be cut, sewn and sold?\n\nWe’re treating PatternFast’s speed and savings claims as company claims. The test we care about is whether production teams can use the output with less correction and fewer rounds of sampling.\n\nA factory-ready pattern is a demanding promise. There are people downstream who will discover very quickly whether it is true.\n\nRaquel has picked a problem with that kind of accountability built in.\n\nThe generated image gets the attention. The person who makes it possible to produce the garment might build the more useful company.\n\nBudera Founder Files. The people building before the rest of us know what to call it.",
+    "sources": [
+      {
+        "title": "Yuliya Raquel’s profile and PatternFast’s production workflow",
+        "url": "https://www.ycombinator.com/companies/patternfast-prior-tailornovacouturme"
+      }
+    ]
+  },
+  {
+    "id": "founder-files-keiran-whitaker-entocycle",
+    "slug": "founder-files-keiran-whitaker-entocycle",
+    "category": "founder-files",
+    "section": "THE EDITORIAL",
+    "series": "Founder Files",
+    "title": "His Big Manufacturing Bet Is a Room Full of Flies.",
+    "excerpt": "Keiran Olivares Whitaker’s Entocycle builds technology for insect farming. The interesting work is making the biology behave like an operation.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "food",
+      "automation",
+      "entocycle"
+    ],
+    "coverImage": null,
+    "markdown": "# His Big Manufacturing Bet Is a Room Full of Flies.\n\nThere are easier things to explain at dinner than your insect factory.\n\nKeiran Olivares Whitaker picked that conversation anyway.\n\nHe founded Entocycle, which develops technology and facilities for farming black soldier flies. The basic idea is to use insects to turn organic waste into useful products, including protein for animal feed.\n\nEntocycle’s London demonstration facility combines computer vision, climate control, automation and data collection around a live colony.\n\nThat combination is what interests us. Biology gives you an astonishing little conversion machine. Building a business means getting it to perform consistently, in large numbers, under conditions you can afford to maintain.\n\nThe insects do not read your operating plan. They do not care that a buyer wants a delivery on Tuesday. You have to understand the process well enough to make a dependable operation around them.\n\nThat’s a properly difficult engineering problem hiding inside a story people might dismiss as weird food tech.\n\nOur read is that Whitaker’s company sits in a useful place: the machinery and operational knowledge other insect producers need. If more people want to produce this kind of feed, someone has to make the farm work.\n\nThe economics still matter. Waste inputs, operating costs, product consistency and what a customer will actually pay are going to decide much more than a sustainability slogan.\n\nWe want to see whether Entocycle can help operators produce reliably enough to earn repeat business.\n\nBut we like a founder willing to spend years inside the unglamorous part of an unusual idea.\n\nSome people see a room full of flies and leave.\n\nWhitaker saw something worth engineering.\n\nBudera Founder Files. The people building before the rest of us know what to call it.",
+    "sources": [
+      {
+        "title": "Entocycle’s mission and founder",
+        "url": "https://entocycle.com/about/who-we-are"
+      },
+      {
+        "title": "Entocycle’s Centre for Insect Technology",
+        "url": "https://entocycle.com/press-releases/french-former-rugby-union-star-benjamin-kayser-officially-opens-entocycles-centre-for-insect-technology"
+      }
+    ]
+  },
+  {
+    "id": "founder-files-nidhi-pant-s4s",
+    "slug": "founder-files-nidhi-pant-s4s",
+    "category": "founder-files",
+    "section": "THE EDITORIAL",
+    "series": "Founder Files",
+    "title": "She’s Building a Business Around the Crops That Don’t Get Sold.",
+    "excerpt": "Nidhi Pant and the S4S Technologies team connect food preservation equipment with a route to market. The dryer is only part of the idea.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "agriculture",
+      "climate",
+      "s4s-technologies"
+    ],
+    "coverImage": null,
+    "markdown": "# She’s Building a Business Around the Crops That Don’t Get Sold.\n\nGrowing food and getting paid for it are two very different problems.\n\nNidhi Pant is working on the gap between them.\n\nShe’s a co-founder of S4S Technologies, which provides solar-powered dryers and food processing equipment to rural communities in India. The company also connects preserved food products with commercial buyers.\n\nThat second part deserves more attention.\n\nA useful machine can still leave someone with a new problem. Congratulations, your tomatoes last longer. Who buys them? In what form? How do you get a reliable order instead of another pile of stock waiting for a customer?\n\nAccording to the Earthshot Prize’s account of S4S, the model includes helping women farmers and entrepreneurs preserve produce and sell products made from it. S4S won the prize’s waste category in 2023.\n\nWe’re interested in the operational choice underneath the award. The team has taken responsibility for more of the journey from crop to income.\n\nThat sounds obvious until you look at how many startups would prefer to ship the clever bit and leave distribution to somebody else.\n\nIt also makes the business harder. Equipment, training, quality and buyers have to line up. The system needs to keep working when the weather changes or the next harvest looks different.\n\nOur view is that founders who stay with those details can learn things a more distant competitor will struggle to see. The opportunity is in knowing how the whole transaction actually happens.\n\nPant’s work is a reminder that a big idea can start with a very practical question.\n\nThere is food here. Someone could use it. How do we make sure the person who grew it gets paid?\n\nThat is worth a founder’s time.\n\nBudera Founder Files. The people building before the rest of us know what to call it.",
+    "sources": [
+      {
+        "title": "The Earthshot Prize’s account of S4S Technologies",
+        "url": "https://earthshotprize.org/winners-finalists/s4s-technologies/"
+      }
+    ]
+  },
+  {
+    "id": "worth-watching-forge-robotics",
+    "slug": "worth-watching-forge-robotics",
+    "category": "worth-watching",
+    "section": "THE COMPANIES",
+    "series": "Worth Watching",
+    "title": "The Robot Arm Is Already There. They’re Teaching It to Find the Weld.",
+    "excerpt": "Forge Robotics is starting with vision and welding in metal fabrication. Its larger ambition begins with making existing arms more useful.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "robotics",
+      "manufacturing",
+      "welding",
+      "forge-robotics"
+    ],
+    "coverImage": null,
+    "markdown": "# The Robot Arm Is Already There. They’re Teaching It to Find the Weld.\n\nA robot arm that needs a specialist every time the part changes comes with a fairly important asterisk.\n\nForge Robotics is going after that asterisk.\n\nThe early company is developing vision and control technology for metal fabrication, starting with welding. In its public launch, Forge describes a robot-mounted vision system that maps the work, identifies seams and guides the arm.\n\nThat gives us a specific reason to pay attention. The workpiece is real. It might arrive slightly different from the last one. The system has to figure out where the useful action should happen.\n\nThere is a lot more to a good weld than finding a line, of course. Fit-up, materials, access and process quality all matter. Seeing the seam is part of a much larger job.\n\nForge’s ambition is to extend into more of the fabrication process. We’re reading that as a roadmap. What matters first is whether the initial system can handle customer parts reliably enough to justify its place in a shop.\n\nThat’s the stage we like to watch. Before a company gets to turn a narrow success into a giant story, it has to earn the success.\n\nThe interesting upside is practical. If changing the work takes less specialist programming, robotic welding could make sense for more of the jobs a fabricator actually receives.\n\nMore useful hours from equipment. Less time teaching the same arm what changed.\n\nWe’ll be watching the gap between a controlled demonstration and a shop with awkward parts, deadlines and people who have heard plenty of automation promises already.\n\nForge has chosen a problem where those people can tell you very quickly whether you’ve built something worth a damn.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier.",
+    "sources": [
+      {
+        "title": "Forge Robotics’ public product launch",
+        "url": "https://www.ycombinator.com/companies/forge-robotics"
+      }
+    ]
+  },
+  {
+    "id": "worth-watching-verne-robotics",
+    "slug": "worth-watching-verne-robotics",
+    "category": "worth-watching",
+    "section": "THE COMPANIES",
+    "series": "Worth Watching",
+    "title": "Their Robot’s First Interesting Job Is Packing Little Chemical Vials.",
+    "excerpt": "Verne Robotics says it deployed a two-arm robot to pack vials at ABClonal. We’re interested in how much work sits between unpacking and useful output.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "robotics",
+      "biotech",
+      "automation",
+      "verne-robotics"
+    ],
+    "coverImage": null,
+    "markdown": "# Their Robot’s First Interesting Job Is Packing Little Chemical Vials.\n\nPacking chemical vials probably won’t get a standing ovation at a technology conference.\n\nWe’d still rather hear about the job.\n\nVerne Robotics, founded by Neil Nie and Aditya Jha, is developing robot arms that learn manipulation tasks from demonstrations. Its public launch describes Nemo3, a two-arm system, and a deployment packing vials at ABClonal.\n\nThe company says it went from unpacking to automating that task in four days. That is its account, and the setup time is exactly the part we would want to examine with a customer.\n\nBecause getting the robot to do something once is a very different expense from getting it to do something usefully every day.\n\nThere is the demonstration data. The workspace. The objects. The handoff when a person needs to intervene. The changes a customer makes after you thought you’d finished.\n\nVerne also describes an hourly payment model. That creates an interesting commercial question: can the team get a robot working quickly enough, and keep it productive long enough, to make the economics work for both sides?\n\nThat’s a much more useful question than how many tasks a model can theoretically learn.\n\nOur read is that a narrow packaging job is a sensible place to test the larger ambition. A customer has an existing process and a reason to compare results.\n\nWe want to see what happens on the next deployment. Does the learning carry over? Does support become easier? How often does the workflow change?\n\nTiny vials. Repeated movements. A very specific piece of work.\n\nThere are worse places to start finding out whether flexible robotics can become a business.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier.",
+    "sources": [
+      {
+        "title": "Verne’s Nemo3 launch and ABClonal deployment account",
+        "url": "https://www.ycombinator.com/companies/verne-robotics"
+      }
+    ]
+  },
+  {
+    "id": "worth-watching-revise-robotics",
+    "slug": "worth-watching-revise-robotics",
+    "category": "worth-watching",
+    "section": "THE COMPANIES",
+    "series": "Worth Watching",
+    "title": "They Want a Robot to Deal With Your Old Laptop.",
+    "excerpt": "Revise Robotics is working on the awkward middle of electronics resale: testing, wiping, documenting and preparing used machines for another owner.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "robotics",
+      "electronics",
+      "circular-economy",
+      "revise-robotics"
+    ],
+    "coverImage": null,
+    "markdown": "# They Want a Robot to Deal With Your Old Laptop.\n\nYour old laptop might still be useful.\n\nUnfortunately, somebody has to find out what’s wrong with it first.\n\nThen wipe it. Test it. Work out what it is. Photograph it. Get it ready for someone who expects the damn thing to work when it arrives.\n\nRevise Robotics is building automation for that process.\n\nFounded by Rupesh Jeyaram and Antonio Monreal, the company describes a robotic system for electronics refurbishment facilities, starting with laptops. Its stated workflow includes testing devices, wiping storage, photographing them and creating resale listings.\n\nWe like this because the work already has a purpose. There’s a device at one end and a potential second owner at the other. The middle is a collection of physical and digital tasks that somebody has to complete.\n\nIt is also messy in ways a polished demo can conceal. Different models. Different operating systems. Missing information. Machines that have spent years acquiring problems their manufacturers didn’t plan for.\n\nRevise’s public launch described an initial pilot. That is an early milestone, and we’re treating the broader automation claims as something the team still has to demonstrate across real inventories.\n\nThe question we care about is whether it improves the economics per device. How much can the system process, how much intervention does it need, and how confidently can the next buyer trust the result?\n\nIf those answers improve, more devices might be worth putting back into circulation.\n\nThere’s a whole robotics story hiding in the pile of equipment someone else decided to get rid of.\n\nRevise is choosing to look through it.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier.",
+    "sources": [
+      {
+        "title": "Revise Robotics’ workflow, founders and pilot announcement",
+        "url": "https://www.ycombinator.com/companies/revise-robotics"
+      }
+    ]
+  },
+  {
+    "id": "worth-watching-ultra",
+    "slug": "worth-watching-ultra",
+    "category": "worth-watching",
+    "section": "THE COMPANIES",
+    "series": "Worth Watching",
+    "title": "Their Robotics Pitch Starts With Getting Through the Shift.",
+    "excerpt": "Ultra is building robots for repetitive industrial work. We’re watching whether quick setup and flexible tasks can survive a customer’s working day.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "robotics",
+      "logistics",
+      "industrial",
+      "ultra"
+    ],
+    "coverImage": null,
+    "markdown": "# Their Robotics Pitch Starts With Getting Through the Shift.\n\nThe future of robotics gets discussed in some very large rooms.\n\nThe purchase decision might happen next to a conveyor belt.\n\nUltra is building robots for repetitive industrial tasks. Its founding team includes people who previously built Layer By Layer and Voodoo Manufacturing, and its public profile says it already has robots in the field generating revenue.\n\nThe company’s pitch emphasises fast installation and the ability to learn new tasks. Those are company claims. They’re also sensible things for a customer to care about.\n\nAn operations team has to fit the machine into an existing day. There is space to find, work to assign, people to train and an exception that will arrive as soon as everyone thinks the setup is finished.\n\nMaking that manageable might be just as valuable as making the robot more capable.\n\nOur interest is in the accumulated experience behind the team’s choice. Building manufacturing companies gives you opportunities to discover how much work happens around the equipment. The handoffs and interruptions can decide whether a technically impressive system gets used.\n\nThat doesn’t prove Ultra has solved deployment. It gives us a reason to follow how it approaches the problem.\n\nWe’d want to see a customer change a task. Watch what happens when the line stops. Understand who supports the robot when the founding team is somewhere else.\n\nThose details are where a flexible system earns the description.\n\nFor now, Ultra has picked an appropriately demanding audience: people who need work completed before the shift ends.\n\nThey are unlikely to accept a nice video as payment for the interruption.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier.",
+    "sources": [
+      {
+        "title": "Ultra’s product approach and founding team",
+        "url": "https://www.ycombinator.com/companies/ultra"
+      }
+    ]
+  },
+  {
+    "id": "worth-watching-networkocean",
+    "slug": "worth-watching-networkocean",
+    "category": "worth-watching",
+    "section": "THE COMPANIES",
+    "series": "Worth Watching",
+    "title": "They’re Putting Solar-Powered Compute on the Water.",
+    "excerpt": "NetworkOcean’s latest bet is floating solar data centres. The early question is how quickly a strange-looking system can serve a real workload.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "compute",
+      "energy",
+      "infrastructure",
+      "networkocean"
+    ],
+    "coverImage": null,
+    "markdown": "# They’re Putting Solar-Powered Compute on the Water.\n\nSomewhere in the journey from an AI idea to a running workload, somebody needs to provide electricity.\n\nNetworkOcean has taken that requirement in a fairly unusual direction.\n\nThe company, founded by Sam Mendel and Eric Kim, is developing floating solar data centres. In its latest public launch, the team says it ran a customer AI workload on an H100 powered by solar on the water, going from paper to deployment in 53 days.\n\nThat is the company’s account of an early demonstration. It does not establish the economics of a large data centre.\n\nIt does give us a concrete reason to look closer.\n\nThe proposed advantage is getting compute and power working together faster. It is an infrastructure bet about what has to happen before the model gets to run at all.\n\nThe awkward questions arrive immediately. What happens overnight? How do maintenance and connectivity work? What does the installation cost once you include the whole system? Which water sites actually make sense?\n\nGood. A strange idea should survive specific questions.\n\nWe’re interested in whether the team can turn an initial workload into a repeatable installation customers want to use. The useful comparison is the full cost and time required to deliver dependable compute.\n\nWe also like that the public story has changed from an earlier underwater data centre concept to the current floating solar approach. The details of the implementation matter more than loyalty to the first pitch.\n\nThere is plenty here left to prove.\n\nBut a small team putting a real workload on an unusual source of infrastructure is exactly the sort of thing we want to notice while it still looks a little odd.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier.",
+    "sources": [
+      {
+        "title": "NetworkOcean’s current floating solar launch and earlier concept",
+        "url": "https://www.ycombinator.com/companies/networkocean"
+      }
+    ]
+  },
+  {
+    "id": "worth-watching-flywheel-ai",
+    "slug": "worth-watching-flywheel-ai",
+    "category": "worth-watching",
+    "section": "THE COMPANIES",
+    "series": "Worth Watching",
+    "title": "They Want to Automate the Excavator You Already Own.",
+    "excerpt": "Flywheel AI is starting with remote control for existing excavators and using the work to collect data for future autonomy.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "robotics",
+      "construction",
+      "teleoperation",
+      "flywheel-ai"
+    ],
+    "coverImage": null,
+    "markdown": "# They Want to Automate the Excavator You Already Own.\n\nAn excavator is an expensive thing to replace just because someone has a new software idea.\n\nFlywheel AI is starting with the machine already on the site.\n\nThe early team is developing retrofit equipment and remote controls for excavators. In its public launch, it describes using teleoperated work to collect data for automating construction tasks over time.\n\nThere is a practical sequence here that we like. Get access to the machine. Make remote operation useful. Learn from the work that actually happens.\n\nEach step has to earn the right to lead to the next one.\n\nA remote control system has its own demanding requirements. Operators need to understand what is happening around the machine. Supervisors need a way to take over. A connection problem cannot become everyone else’s emergency.\n\nFlywheel describes controls and intervention features in its launch. We’d want to see how they perform under customer conditions before drawing conclusions about deployment readiness.\n\nThe autonomy part is a further ambition. Collecting data from a task does not automatically produce a system that can perform it safely on its own.\n\nStill, there’s something useful about building around existing equipment. Contractors have already made a major investment. A product that improves that equipment has a different route into the operation from one that asks them to buy a whole new fleet.\n\nWe’re watching for evidence that operators want to keep using it after the first trial, and for a clear account of which tasks become automated next.\n\nThere is a lot of future to talk about in construction robotics.\n\nFlywheel is starting by getting its hands on the controls.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier.",
+    "sources": [
+      {
+        "title": "Flywheel AI’s retrofit, remote operation and data collection approach",
+        "url": "https://www.ycombinator.com/companies/flywheel-ai"
+      }
+    ]
+  },
+  {
+    "id": "worth-watching-albacore",
+    "slug": "worth-watching-albacore",
+    "category": "worth-watching",
+    "section": "THE COMPANIES",
+    "series": "Worth Watching",
+    "title": "A Classics Major and a Mechanical Engineer Are Building Drone Submarines.",
+    "excerpt": "Albacore is working on long-range unmanned underwater vehicles. We’re interested in the manufacturing problem underneath the ambitious pitch.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "robotics",
+      "maritime",
+      "manufacturing",
+      "albacore"
+    ],
+    "coverImage": null,
+    "markdown": "# A Classics Major and a Mechanical Engineer Are Building Drone Submarines.\n\nAn underwater robot makes it very easy to say something that sounds impressive.\n\nTry producing enough of them, keeping them working and getting them where they’re needed.\n\nAlbacore, founded by Dante Vaisbort and John Huddleston, is developing long-range drone submarines. Its public materials put manufacturing at the centre of the pitch: underwater systems designed to be produced in volume.\n\nThe founders have an unusual combination of backgrounds. Vaisbort studied classics before building defence technology companies. Huddleston is a mechanical engineer who worked on autonomous systems and manufacturing advisory projects.\n\nThe company’s claims about vehicle capability are its own. We’re interested in the questions behind those claims rather than treating a launch description as an operational record.\n\nWhat can the team build consistently? How much testing does each vehicle require? What happens when something needs servicing? Does producing more units make the system easier to support or multiply the problems?\n\nThat is a substantial part of the robotics business in any environment. Underwater, the consequences of getting the details wrong are particularly unforgiving.\n\nOur read is that the manufacturing emphasis makes Albacore worth following. There is a big difference between a successful prototype and a product an organisation can procure, operate and maintain repeatedly.\n\nWe want to see evidence that the team can close that distance.\n\nThe ocean gives this story its scale. The less glamorous work of parts, production and support will probably decide how far it goes.\n\nA small company has decided to take all of that on.\n\nThat’s enough to get it onto our watchlist. Now it has to build.\n\nBudera Worth Watching. The companies we think you’ll wish you found earlier.",
+    "sources": [
+      {
+        "title": "Albacore’s public company launch and founder backgrounds",
+        "url": "https://www.ycombinator.com/companies/albacore-inc"
+      }
+    ]
+  },
+  {
+    "id": "hot-takes-demo-isnt-a-shift",
+    "slug": "hot-takes-demo-isnt-a-shift",
+    "category": "hot-takes",
+    "section": "THE OPINIONS",
+    "series": "Hot Takes",
+    "title": "Your Robot Demo Should Come With the Rest of the Shift.",
+    "excerpt": "The useful part of a robotics demo might be what happened in the seven hours nobody filmed. Show us the interruptions.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "robotics",
+      "deployment",
+      "customers",
+      "hot-takes"
+    ],
+    "coverImage": null,
+    "markdown": "# Your Robot Demo Should Come With the Rest of the Shift.\n\nShow us the part after the robot picks up the object.\n\nThe next object. The one after that. The one somebody put down slightly wrong. The interruption. The restart. The person who has to walk over and fix whatever just happened.\n\nThen keep the camera running.\n\nWe like a good demo. Watching a machine do something difficult is exciting. There is real engineering in making the first successful attempt happen, and people deserve credit for it.\n\nBut a buyer is trying to understand a working day.\n\nHow much useful work gets completed? What needs resetting? How long does recovery take? Does the operator end up spending the afternoon babysitting the thing that was supposed to free up their time?\n\nThose questions can make an impressive system look very different.\n\nThey also create an opportunity for a less impressive-looking machine. A robot doing a narrow job reliably can be extremely valuable to the person responsible for that job.\n\nFounders should get more comfortable showing the messy version. Explain what failed. Say where a person helped. Show the conditions under which the system works and what you’re improving next.\n\nThat gives a customer something to evaluate. It gives the engineering progress some context. It might even make the successful part more impressive because we understand what it took.\n\nThere’s plenty of room for ambition. We just want a clearer account of the work between the highlights.\n\nMake the beautiful clip.\n\nThen tell us how the rest of the shift went.\n\nBudera Hot Takes. Strong opinions from people actually paying attention."
+  },
+  {
+    "id": "hot-takes-boring-market-good",
+    "slug": "hot-takes-boring-market-good",
+    "category": "hot-takes",
+    "section": "THE OPINIONS",
+    "series": "Hot Takes",
+    "title": "If Your Market Sounds Boring at Dinner, You Might Be Onto Something.",
+    "excerpt": "There are customers with expensive problems in industries that will never make you sound cool. That should be encouraging.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "startups",
+      "markets",
+      "customers",
+      "hot-takes"
+    ],
+    "coverImage": null,
+    "markdown": "# If Your Market Sounds Boring at Dinner, You Might Be Onto Something.\n\nSomewhere, a founder is trying to make a genuinely useful company sound more interesting to someone who will never buy the product.\n\nStop doing that.\n\nIf you fix inspection paperwork, sell the inspection paperwork. If you help a factory quote jobs, talk about the factory. If the exciting part of the week is that an order went out correctly, explain why that matters.\n\nThe customer already knows.\n\nThey know how much time the problem eats. They know who gets called when it breaks. They might have spent years assuming that this particular piece of their working life was going to stay annoying forever.\n\nThat is a pretty good place to start a conversation.\n\nYou still need a business. A boring market can have terrible margins, slow purchasing and customers who have no budget. Obscurity doesn’t magically make the economics work.\n\nBut neither does a fashionable category.\n\nWe’d rather see a founder understand one expensive problem in uncomfortable detail than collect the right words to describe a giant opportunity they’ve barely touched.\n\nWho pays? Why now? How do they do the job today? What would make switching worthwhile? Answer those and your company starts getting interesting very quickly.\n\nYou can find plenty of ambition inside an unglamorous first product. The founder who knows the workflow might see an entire operation that could work better.\n\nThey just have somewhere specific to begin.\n\nLet the dinner conversation be boring.\n\nBuild the thing the customer calls you about on Monday.\n\nBudera Hot Takes. Strong opinions from people actually paying attention."
+  },
+  {
+    "id": "hot-takes-pilot-is-not-a-customer",
+    "slug": "hot-takes-pilot-is-not-a-customer",
+    "category": "hot-takes",
+    "section": "THE OPINIONS",
+    "series": "Hot Takes",
+    "title": "A Pilot Is a Question. Stop Announcing It Like an Answer.",
+    "excerpt": "A company agreeing to try your product is useful. The real learning is what makes them pay, renew and bring it into the work.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "startups",
+      "sales",
+      "pilots",
+      "hot-takes"
+    ],
+    "coverImage": null,
+    "markdown": "# A Pilot Is a Question. Stop Announcing It Like an Answer.\n\nWe’ve signed a pilot.\n\nGreat. What are you trying to find out?\n\nBecause that is the useful part. A pilot gives you a chance to test whether your product belongs inside someone else’s operation. You get access, attention and a set of real constraints that your own team probably couldn’t invent.\n\nTreat that as something precious.\n\nAgree on the job. Agree on what a successful result looks like. Work out who has the authority and budget to do something if it succeeds.\n\nOtherwise you can spend months performing helpful little experiments for a company that likes you and has absolutely no plan to buy.\n\nThat happens easily. The person running the trial might be enthusiastic. The users might have good feedback. Everyone might enjoy the meetings.\n\nThen you ask what happens next and discover that nobody has thought about it.\n\nA founder needs to ask earlier.\n\nWhat would make this worth paying for? Which existing cost or constraint changes? What has to happen before the product becomes part of the normal workflow?\n\nThose questions can feel less comfortable than announcing another logo.\n\nGood. They give the pilot a purpose.\n\nWe like early traction. We also want to know what it represents. A trial, a paid deployment, a renewal and an expanding account tell you different things about a company.\n\nFounders should be specific about which one they have.\n\nThe pilot is where you earn the evidence for the next claim.\n\nGet the evidence. Then make the claim.\n\nBudera Hot Takes. Strong opinions from people actually paying attention."
+  },
+  {
+    "id": "hot-takes-human-in-loop",
+    "slug": "hot-takes-human-in-loop",
+    "category": "hot-takes",
+    "section": "THE OPINIONS",
+    "series": "Hot Takes",
+    "title": "Put the Human in the Diagram.",
+    "excerpt": "If someone is still helping your AI complete the job, explain their role. The handoff might be one of the most important parts of the product.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "ai",
+      "robotics",
+      "operations",
+      "hot-takes"
+    ],
+    "coverImage": null,
+    "markdown": "# Put the Human in the Diagram.\n\nIf a person steps in when your system gets stuck, put them in the diagram.\n\nTell the customer what they do. Explain when they get called. Account for their time in the price.\n\nThis should be a perfectly normal product conversation.\n\nEarly systems often need help. Sometimes the useful version of a product will continue to need help, because the job includes exceptions that are expensive or pointless to automate completely.\n\nThe founder’s job is to understand that boundary.\n\nHow often does an exception happen? Can the person see enough context to handle it? Does their intervention let the system continue, or do they end up doing the entire task themselves?\n\nThose details determine what the customer is buying.\n\nThey also determine whether the business can grow. An operation that requires more human attention with every deployment has a different cost structure from one where the same support team can handle more work over time.\n\nBoth deserve to be measured properly.\n\nWe get suspicious when the human help disappears from the pitch but remains essential to the result. That makes it harder to understand the product, the economics and what progress actually means.\n\nShow the handoff. Improve it. Give the operator a decent interface. Make recovery faster. Learn which situations keep causing problems.\n\nThere is serious engineering in that work.\n\nA customer can make an informed decision about a system that needs occasional assistance.\n\nThey’ll have a much harder time trusting one that made the assistance a surprise.\n\nBudera Hot Takes. Strong opinions from people actually paying attention."
+  },
+  {
+    "id": "hot-takes-first-ten-customers",
+    "slug": "hot-takes-first-ten-customers",
+    "category": "hot-takes",
+    "section": "THE OPINIONS",
+    "series": "Hot Takes",
+    "title": "Your First Ten Customers Should Probably Look Embarrassingly Similar.",
+    "excerpt": "A product for everyone can give an early team ten completely different jobs. Find a group whose problems let the work compound.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "customers",
+      "product",
+      "hot-takes"
+    ],
+    "coverImage": null,
+    "markdown": "# Your First Ten Customers Should Probably Look Embarrassingly Similar.\n\nHere is a version of early traction that can quietly fuck up a company.\n\nTen customers. Ten industries. Ten workflows. Ten sets of custom requirements that all seem reasonable in the meeting.\n\nThe slide looks great. The engineering calendar looks like a hostage note.\n\nAn early team needs learning that carries over. The next customer should help you understand the same problem more deeply, rather than introduce an entirely new profession you now have to master.\n\nThat usually means being more specific about who you serve.\n\nWhich job do they need done? What tools do they already use? What do they consider a good result? Who signs off when it works?\n\nIf those answers keep changing, you might be collecting projects faster than you’re building a product.\n\nProjects can pay the bills. They can teach you useful things. Just be honest about the work you are taking on and what you expect to reuse.\n\nWe like founders who can describe the next customer in detail. They know where to find them. They know which complaint will start the conversation. They’ve already seen enough of the workflow to anticipate the awkward questions.\n\nThat kind of focus can look small from a distance.\n\nUp close, it gives the company a chance to get better with every deployment. Sales gets clearer. Setup gets easier. The product starts arriving with answers instead of another list of things to build.\n\nThere will be time to widen the market.\n\nFirst, find a group of people whose problems let you learn the same lesson more than once.\n\nBudera Hot Takes. Strong opinions from people actually paying attention."
+  },
+  {
+    "id": "hot-takes-fundraise-what-changed",
+    "slug": "hot-takes-fundraise-what-changed",
+    "category": "hot-takes",
+    "section": "THE OPINIONS",
+    "series": "Hot Takes",
+    "title": "You Raised Money. Tell Us What You Can Do With It.",
+    "excerpt": "The interesting part of a funding round is the work it makes possible. Start there and the announcement might actually be worth reading.",
+    "author": "Budera",
+    "publishedAt": "2026-10-16",
+    "readTime": "2 min read",
+    "featured": false,
+    "tags": [
+      "founders",
+      "fundraising",
+      "execution",
+      "hot-takes"
+    ],
+    "coverImage": null,
+    "markdown": "# You Raised Money. Tell Us What You Can Do With It.\n\nCongratulations on the round.\n\nNow tell us what changes on Monday.\n\nCan you run an experiment you couldn’t afford? Build a second machine? Hire the person who understands the part of the problem your team keeps getting wrong?\n\nCan a customer finally get the thing they’ve been waiting for?\n\nThat is the interesting story.\n\nFunding announcements have a habit of treating the money as the result. The amount gets the headline. The investor list takes a lap. Somebody explains that the market is enormous and the team is uniquely positioned.\n\nBy the end, we still don’t know what the company is going to build.\n\nA useful announcement could be much simpler. Here is the constraint we hit. Here is what the capital lets us attempt. Here is what we need to learn before the next stage makes sense.\n\nThat would also make the ambition easier to believe. A founder who can describe the next difficult milestone probably understands more than one who can only describe the eventual market size.\n\nAnd sometimes the milestone is unglamorous. Getting manufacturing consistent. Reducing the time required to onboard a customer. Making support work without the founder answering every message.\n\nThose can be the things that let a company grow.\n\nWe’re happy founders get the resources to keep going. Building is expensive, uncertainty is real and a little breathing room can change what a team is able to attempt.\n\nWe just want to hear about the attempt.\n\nYou got the money. What does it let you make possible?\n\nBudera Hot Takes. Strong opinions from people actually paying attention."
   }
 ]
