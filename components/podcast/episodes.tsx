@@ -13,7 +13,6 @@ export function EpisodesSection() {
       description={editorial.description}
       articles={articles.slice(0, 3)}
       archiveHref="/founder-files"
-      totalCount={articles.length}
       columns="three"
     />
   )

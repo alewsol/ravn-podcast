@@ -4,7 +4,6 @@ import { ArrowLeftIcon } from "@phosphor-icons/react/dist/ssr/ArrowLeft"
 
 import { articleSections } from "@/lib/article-sections"
 import { getArticleCards, type ArticleCategory } from "@/lib/articles"
-import { hasSubscriberAccess } from "@/lib/subscriber-access"
 import { ArticleGrid } from "./article-grid"
 import { NewsletterSection } from "./newsletter"
 import { PodcastSiteFooter } from "./site-footer"
@@ -23,10 +22,9 @@ export function getSectionMetadata(category: ArticleCategory): Metadata {
   }
 }
 
-export async function SectionPage({ category }: { category: ArticleCategory }) {
+export function SectionPage({ category }: { category: ArticleCategory }) {
   const section = articleSections[category]
   const articles = getArticleCards(category)
-  const hasAccess = await hasSubscriberAccess()
 
   return (
     <div className="podcast-site relative flex min-h-full flex-col bg-background">
@@ -42,8 +40,6 @@ export async function SectionPage({ category }: { category: ArticleCategory }) {
           {...section}
           articles={articles}
           headingLevel="h1"
-          totalCount={articles.length}
-          hasAccess={hasAccess}
         />
         <NewsletterSection />
       </main>

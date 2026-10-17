@@ -15,7 +15,6 @@ export function TopicsSection() {
         description={companies.description}
         articles={companyArticles.slice(0, 3)}
         archiveHref="/worth-watching"
-        totalCount={companyArticles.length}
         columns="three"
       />
       <ArticleGrid
@@ -25,7 +24,6 @@ export function TopicsSection() {
         description={opinions.description}
         articles={opinionArticles.slice(0, 4)}
         archiveHref="/hot-takes"
-        totalCount={opinionArticles.length}
         columns="two"
       />
     </>

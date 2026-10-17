@@ -2,8 +2,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { ArticlePage } from "@/components/podcast/article-page"
-import { getAllArticles, getArticleBySlug, isSubscriberArticle } from "@/lib/articles"
-import { hasSubscriberAccess } from "@/lib/subscriber-access"
+import { getAllArticles, getArticleBySlug } from "@/lib/articles"
 
 type ArticlePageProps = {
   params: Promise<{
@@ -49,6 +48,5 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
     notFound()
   }
 
-  const locked = isSubscriberArticle(article) && !(await hasSubscriberAccess())
-  return <ArticlePage article={article} locked={locked} />
+  return <ArticlePage article={article} />
 }

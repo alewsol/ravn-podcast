@@ -3,7 +3,7 @@ import { test } from "node:test"
 
 import sitemap from "../app/sitemap"
 import { articleSections } from "../lib/article-sections"
-import { getAllArticles, getArticleBySlug, getArticlesByCategory, getArticleCards, isSubscriberArticle, type ArticleCategory } from "../lib/articles"
+import { getAllArticles, getArticleBySlug, getArticlesByCategory, getArticleCards, type ArticleCategory } from "../lib/articles"
 import { getSiteUrl } from "../lib/site"
 
 test("each editorial section contains ten complete, uniquely addressable stories", () => {
@@ -42,15 +42,13 @@ test("new founder and company stories provide public research sources", () => {
   }
 })
 
-test("stories 1–4 are open and 5–10 require subscription in every section", () => {
+test("all ten stories in every section have public cards without full-text payloads", () => {
   for (const category of Object.keys(articleSections) as ArticleCategory[]) {
     const stories = getArticlesByCategory(category)
     const cards = getArticleCards(category)
-    assert.equal(cards.filter((card) => !card.subscriberOnly).length, 4)
-    assert.equal(cards.filter((card) => card.subscriberOnly).length, 6)
+    assert.equal(cards.length, 10)
     for (const [index, story] of stories.entries()) {
-      assert.equal(isSubscriberArticle(story), index >= 4)
-      assert.equal(cards[index].subscriberOnly, index >= 4)
+      assert.equal("subscriberOnly" in cards[index], false)
       assert.equal(cards[index].slug, story.slug)
       assert.equal("markdown" in cards[index], false)
       assert.equal("sources" in cards[index], false)

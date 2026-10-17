@@ -4,11 +4,11 @@ import { ArrowLeftIcon } from "@phosphor-icons/react/dist/ssr/ArrowLeft"
 import type { Article } from "@/lib/articles"
 
 import { ArticleRichText } from "./article-rich-text"
+import { NewsletterSection } from "./newsletter"
 import { PodcastSiteFooter } from "./site-footer"
 import { PodcastSiteHeader } from "./site-header"
-import { SubscriberGate } from "./subscriber-gate"
 
-export function ArticlePage({ article, locked = false }: { article: Article; locked?: boolean }) {
+export function ArticlePage({ article }: { article: Article }) {
   return (
     <div className="podcast-site relative flex min-h-full flex-col bg-background">
       <PodcastSiteHeader category={article.category} />
@@ -44,16 +44,14 @@ export function ArticlePage({ article, locked = false }: { article: Article; loc
         <div>
           <div className="grid gap-14 lg:grid-cols-[minmax(0,46rem)_minmax(0,18rem)] lg:gap-20">
             <article className="min-w-0">
-              {locked ? <SubscriberGate /> : <ArticleRichText markdown={article.markdown.replace(/^# .+\r?\n\s*/, "")} />}
-              {!locked && article.sources?.length ? (
+              <ArticleRichText markdown={article.markdown.replace(/^# .+\r?\n\s*/, "")} />
+              {article.tags.length ? (
                 <div className="mt-12 border-t border-border pt-6">
-                  <h2 className="type-title text-foreground">Sources</h2>
-                  <ul className="mt-4 space-y-3">
-                    {article.sources.map((source) => (
-                      <li key={source.url} className="type-body">
-                        <a href={source.url} className="text-muted-foreground underline underline-offset-4 hover:text-foreground">
-                          {source.title}
-                        </a>
+                  <h2 className="type-meta text-muted-foreground/70">Tags</h2>
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {article.tags.map((tag) => (
+                      <li key={tag} className="type-meta text-muted-foreground">
+                        #{tag.replace(/^#+/, "")}
                       </li>
                     ))}
                   </ul>
@@ -67,23 +65,13 @@ export function ArticlePage({ article, locked = false }: { article: Article; loc
                   <p className="type-meta text-muted-foreground/70">Category</p>
                   <Link href={`/${article.category}`} className="type-title mt-2 block text-foreground hover:underline">{article.series}</Link>
                 </div>
-                <div>
-                  <p className="type-meta text-muted-foreground/70">Tags</p>
-                  <ul className="mt-3 flex flex-wrap gap-2">
-                    {article.tags.map((tag) => (
-                      <li key={tag} className="type-meta text-muted-foreground">
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
               </div>
             </aside>
           </div>
         </div>
       </section>
 
+      <NewsletterSection />
       <PodcastSiteFooter />
     </div>
   )

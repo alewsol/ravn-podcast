@@ -7,7 +7,7 @@ export function NewsletterSection() {
     <section id="newsletter" className="site-container editorial-section" aria-labelledby="newsletter-title">
       <div className="newsletter-panel">
         <div className="newsletter-copy ink-panel">
-          <h2 id="newsletter-title" className="editorial-heading">Subscribe to Budera.</h2>
+          <h2 id="newsletter-title" className="editorial-heading">Want more stories like this? Subscribe.</h2>
           <SubscribeForm />
         </div>
         <div className="newsletter-art ink-panel">

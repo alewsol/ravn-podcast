@@ -1,14 +1,12 @@
 "use client"
 
 import { useId, useRef, useState, type FormEvent } from "react"
-import { useRouter } from "next/navigation"
 import { ArrowUpRightIcon } from "@phosphor-icons/react/dist/ssr/ArrowUpRight"
 
 type Status = "idle" | "submitting" | "success" | "error"
 
-export function SubscribeForm({ unlock = false }: { unlock?: boolean }) {
+export function SubscribeForm() {
   const id = useId()
-  const router = useRouter()
   const [email, setEmail] = useState("")
   const [status, setStatus] = useState<Status>("idle")
   const [message, setMessage] = useState<string | null>(null)
@@ -36,9 +34,8 @@ export function SubscribeForm({ unlock = false }: { unlock?: boolean }) {
         return
       }
       setStatus("success")
-      setMessage(data.message ?? "You're subscribed. All stories are unlocked in this browser.")
+      setMessage(data.message ?? "You're subscribed. You're on the list for future stories.")
       setEmail("")
-      router.refresh()
     } catch {
       setStatus("error")
       setMessage("We couldn't confirm your subscription. Please try again.")
@@ -72,7 +69,7 @@ export function SubscribeForm({ unlock = false }: { unlock?: boolean }) {
           aria-describedby={message ? `${id}-message` : undefined}
         />
         <button type="submit" disabled={status === "submitting"} className="ink-button ink-button-solid">
-          {status === "submitting" ? "Subscribing…" : unlock ? "Subscribe free & unlock" : "Subscribe"}
+          {status === "submitting" ? "Subscribing…" : "Subscribe"}
           <ArrowUpRightIcon size={18} aria-hidden="true" />
         </button>
       </form>
